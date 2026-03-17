@@ -5,20 +5,20 @@
 class Cmt < Formula
   desc "AI-powered automatic git commit message generator"
   homepage "https://github.com/makesikann/cmt"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/makesikann/cmt/releases/download/v0.1.0/cmt_Darwin_x86_64.tar.gz"
-      sha256 "d72b95c084b3cfc8fb6a681e63fb2e33d0fc2bc38c16e83ffb727d692393438c"
+      url "https://github.com/makesikann/cmt/releases/download/v0.2.0/cmt_Darwin_x86_64.tar.gz"
+      sha256 "a1d2a55046ab6738b2767450cd1e2d040679303622e693a6bc432d38cb0de779"
 
       def install
         bin.install "cmt"
       end
     end
     on_arm do
-      url "https://github.com/makesikann/cmt/releases/download/v0.1.0/cmt_Darwin_arm64.tar.gz"
-      sha256 "af8215008136920aec8ef08bb285612c8c156b827e3cd344497fbcdc31b5d950"
+      url "https://github.com/makesikann/cmt/releases/download/v0.2.0/cmt_Darwin_arm64.tar.gz"
+      sha256 "bd5a58776db76e005220584b3d5dc1f828ba777b7d16671b0dfdd80b7c2ce6e8"
 
       def install
         bin.install "cmt"
@@ -29,8 +29,8 @@ class Cmt < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/makesikann/cmt/releases/download/v0.1.0/cmt_Linux_x86_64.tar.gz"
-        sha256 "ec1cdbe0271ae1eb60e295ce59d43f4dea1a383fa9a961cfcd93449197634fa9"
+        url "https://github.com/makesikann/cmt/releases/download/v0.2.0/cmt_Linux_x86_64.tar.gz"
+        sha256 "5fb3467c12f8028808d506c362e591be9e9b9e0dccb44b9d615fa9206d1a21fc"
 
         def install
           bin.install "cmt"
@@ -39,8 +39,8 @@ class Cmt < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/makesikann/cmt/releases/download/v0.1.0/cmt_Linux_arm64.tar.gz"
-        sha256 "00b61d50f0729c24f776cb58ce7955bb116c879adcb17662820034a55cfa4545"
+        url "https://github.com/makesikann/cmt/releases/download/v0.2.0/cmt_Linux_arm64.tar.gz"
+        sha256 "5cdb20c79555e93394e16fdecf6f7ce54000c74cda9913c6080d093eeaa29ab4"
 
         def install
           bin.install "cmt"
